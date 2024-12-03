@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HU</title>
+    <link rel="stylesheet" href="style.css">
+    <style>/* Centering the text and image */
+        #homePage {
+            text-align: center; /* Centers the text and tagline */
+            margin-top: 50px; /* Adds some space above */
+        }
+
+        #homePage p {
+            font-size: 18px; /* Adjust the font size for the tagline */
+            color: #636b2f; /* Optional: Set the color for the tagline */
+            font-style: italic; /* Make the tagline italic */
+        }
+
+        .homepage-image {
+            max-width: 100%; /* Make the image responsive */
+            height: auto; /* Maintain the aspect ratio */
+            margin-top: 20px; /* Adds some space between the text and image */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">HUE</div> <!-- Logo will be aligned to the left -->
+            <ul class="nav-links">
+                <li><a href="#" id="homeLink">Home</a></li>
+                <li><a href="#" id="articlesLink">Articles</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="login.html" id="loginLink" class="active">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Homepage Content -->
+        <section id="homePage" class="active">
+            <h1>Welcome to HUE</h1>
+            <h3><i>"Where curiosity meets emotion, one paw at a time."</i></h3>
+            <img src="/images/bg.jpeg" alt="Homepage Image" class="homepage-image">
+        </section>
+
+        <!-- Articles Content -->
+        <section id="articlesPage" class="hidden">
+            <h1>Articles</h1>
+            <div class="articles-container" id="articlesContainer"></div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
